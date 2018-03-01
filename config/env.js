@@ -25,7 +25,7 @@ var dotenvFiles = [
 // that have already been set.
 // https://github.com/motdotla/dotenv
 dotenvFiles.forEach(dotenvFile => {
-  console.log(`dotenvFile:${doenvFile}`)
+  console.log(`dotenvFile:${dotenvFile}`)
   if (fs.existsSync(dotenvFile)) {
     require('dotenv').config({
       path: dotenvFile,
